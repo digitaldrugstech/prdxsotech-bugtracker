@@ -1,0 +1,41 @@
+name: Для предложений
+description: Помогите нам стать лучше
+labels: 
+  - unmarked
+  - enhancement
+
+body:
+  - type: input
+    id: suggestion
+    attributes:
+      label: Четкое и сжатое описание проблемы
+      description:
+      placeholder:
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Опишите решение, которое вы хотели бы получить
+      description: Четкое и сжатое описание того, что вы хотите, чтобы произошло
+      placeholder: Я хочу видеть здесь X , потому что Z
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Опишите альтернативы, которые вы рассматривали
+      description: Четкое и сжатое описание любых альтернативных механизмов или фич, которые вы рассматривали
+      placeholder: Я считаю, что X лучше оптимизирован и может заменить Z
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Дополнительный контекст
+      description: Добавьте сюда любой другой контекст или скриншоты о запросе фичи
+    validations:
+      required: false
