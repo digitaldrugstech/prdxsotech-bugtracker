@@ -33,7 +33,7 @@ body:
       placeholder: Четкое и сжатое описание того, что вы ожидали увидеть, если бы бага не было
     validations:
       required: true
-
+      
   - type: textarea
     id: media
     attributes:
